@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sv-shop</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sv-shop</h1>
+        <div class="totals">
+            <p>Total product: <span id="total-product">0</span></p>
+            <p>Total price: $<span id="total-price">0.00</span></p>
+        </div>
+        <form method="post" action="/" onsubmit=" return checkout()">
+            <button id="approve">Approve</button>
+        </form>    
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html>

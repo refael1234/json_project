@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sv-shop</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sv-shop</h1>
+        <div class="sort-controls">
+            <div class="dropdown">
+                <button id="dropdownButton" class="dropbtn">☰</button>
+                <div id="dropdownContent" class="dropdown-content">
+                    <label for="sort-by-name">
+                        <input type="radio" name="sort" id="sort-by-name" value="name">
+                        By name
+                    </label>
+                    <label for="sort-by-price">
+                        <input type="radio" name="sort" id="sort-by-price" value="price">
+                        By price
+                    </label>
+                </div>
+            </div>
+            <button id="sort">Sort</button>
+        </div>
+        
+        <form method="post" action="/products" onsubmit=" return products()">
+            <div id="items-container">
+                <div class="item" data-name="bread" data-price="15">
+                    <span>bread</span>
+                    <span>15</span>
+                </div>
+                <div class="item" data-name="milk" data-price="23">
+                    <span>milk</span>
+                    <span>23</span>
+                </div>
+                <div class="item" data-name="gum" data-price="3">
+                    <span>gum</span>
+                    <span>3</span>
+                </div>
+                <div class="item" data-name="candy" data-price="5">
+                    <span>candy</span>
+                    <span>5</span>
+                </div>
+                <div class="item" data-name="cookie" data-price="10">
+                    <span>cookie</span>
+                    <span>10</span>
+                </div>
+            </div>
+            <button type="submit" id="buy">Buy</button>
+        </form>    
+    </div>
+    
+    <script src="products.js"></script>
+</body>
+</html>
